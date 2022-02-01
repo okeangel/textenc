@@ -1,0 +1,25 @@
+    Mass Text File Encoding Converter.
+
+Now you can specify a directory. I will search for every '*.txt' file.
+Next I will propose to you my suggestions for each file one by one.
+
+Avaliable commands:
+    "c" = CONVERT
+        - so I will move original file to a backup directory
+        (named <source_dir>_filenc_backup). Next I will create a new file
+        with  a text encoded by standard.
+    "n" = NOT convert
+        - so I skip this one;
+    "a" = convert ALL files with current confidence or above
+        - so I backup and convert current file, and I will "silently" convert
+        all next files with same encoding and same "confidence" or above.
+        No prompts, no stops, no boring. Make sure there are no mistakes
+        at this confidence value.
+    "l" = not convert all files with current confidence or below, LEAVE it
+        - so I skip current file and all files with same encoding and same
+        confidence or below.
+
+When all files surveyed, process will be finished.
+
+You can restore original state of converted files. Just move the content of
+<source_dir>_filenc_backup to <source_dir>.
